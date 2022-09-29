@@ -41,9 +41,10 @@
 
 #content {
     width: 50vw;
-    height: 482vh;
+    /* height: 482vh; */
     margin: auto;
     margin-top: 2rem;
+    margin-bottom: 20px;
 }
 
 #content>h1 {
@@ -73,6 +74,7 @@
 
 .cont {
     width: 60%;
+    margin-bottom: 10px;
 }
 
 .cont>h2 {

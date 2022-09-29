@@ -7,3 +7,6 @@ offer.innerHTML=offers();
 import search from "./componet/search.js";
 let searchs = document.getElementById("search");
 searchs.innerHTML=search();
+import footer from "./componet/footer.js";
+let sfooter = document.getElementById("footer");
+sfooter.innerHTML=footer();
