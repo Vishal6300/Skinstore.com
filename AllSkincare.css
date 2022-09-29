@@ -1,0 +1,21 @@
+.navi {
+  width: 100%;
+  margin-left: 40px;
+}
+#containers {
+  display: flex;
+  gap: 3%;
+}
+#refine {
+  width: 30%;
+}
+#Products {
+  width: 65%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#Products>h1{
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
