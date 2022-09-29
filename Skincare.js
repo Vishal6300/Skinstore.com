@@ -1,15 +1,12 @@
-let options = document.getElementById("option")
-let popup = document.getElementById("popup");
+import navbar from "./componet/navbar.js";
+let nav = document.getElementById("navbar");
+nav.innerHTML=navbar();
+import offers from "./componet/offer.js";
+let offer = document.getElementById("offer");
+offer.innerHTML=offers();
+import search from "./componet/search.js";
+let searchs = document.getElementById("search");
+searchs.innerHTML=search();
 
-options.addEventListener("mouseover", function () {
-    popup.style = "display:flex";
-})
-options.addEventListener("mouseleave", function () {
-    popup.style = "display:none"
-})
-popup.addEventListener("mouseenter", function () {
-    popup.style = "display:flex";
-})
-popup.addEventListener("mouseleave", function () {
-    popup.style = "display:none";
-})
+
+
