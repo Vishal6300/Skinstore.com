@@ -1,0 +1,65 @@
+#Hdiv {
+  margin: 15px auto 20px 3%;
+}
+#Hdiv > p > a {
+  color: #2e3337;
+}
+#Hdiv > p > a:hover {
+  color: #28bdb7;
+}
+.MainImage {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.MainImage > img {
+  display: block;
+  margin: auto;
+  width: 94%;
+  height: 100%;
+}
+#HbottomSide {
+  display: block;
+  width: 630px;
+  margin: auto;
+  color: #2e3337;
+  text-align: center;
+}
+#HbottomSide > h1 {
+  color: #2e3337;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  font-weight: 400;
+  margin-bottom: 8px;
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+}
+#HbottomSide > input {
+  width: 70%;
+  height: 34px;
+  display: block;
+  margin: auto;
+}
+#HbottomSide > button {
+  display: block;
+  width: 70%;
+  height: 36px;
+  color: white;
+  background-color: #2e3337;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#HbottomSide > button:hover {
+  background-color: #28bdb7;
+  color: #2e3337;
+}
+#HbottomSide > p {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  color: #2e3337;
+}

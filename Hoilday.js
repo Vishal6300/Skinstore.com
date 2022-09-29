@@ -10,5 +10,3 @@ searchs.innerHTML=search();
 import footer from "./componet/footer.js";
 let sfooter = document.getElementById("footer");
 sfooter.innerHTML=footer();
-
-
