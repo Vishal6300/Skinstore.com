@@ -350,3 +350,70 @@ color: black;
     font-weight: 900;
     cursor: pointer;
 }
+
+
+#icons {
+    border-top: solid 1px rgb(51, 51, 51);
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+#icons>div {
+    width: 40%;
+}
+
+.but>p {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.but>button {
+    border: 0px;
+    margin-top: 2rem;
+    padding: 0.7rem;
+    font-size: medium;
+    background-color: rgb(39, 39, 39);
+    color: white;
+}
+
+.icon>div {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+}
+
+#social {
+    height: 3rem;
+    display: flex;
+}
+
+#social>img {
+    margin-left: 1rem;
+    ;
+}
+
+#list {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lists {
+    border-top: solid 1px rgb(52, 52, 52);
+    width: 20%;
+}
+
+.lists>p {
+    margin-top: 1.5rem;
+}
+
+#social1 {
+    height: 3rem;
+    display: flex;
+}
+#footer{
+    position: relative;
+    bottom: 0;
+}
