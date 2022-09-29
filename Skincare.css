@@ -39,6 +39,11 @@
 
 
 
+.next>p>a {
+    text-decoration: none;
+    color: black;
+}
+
 #content {
     width: 50vw;
     /* height: 482vh; */
