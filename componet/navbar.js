@@ -99,7 +99,7 @@ const navbar = () =>{
 <hr style="height: 1.5px;background-color: black;">
 <div id="bottomnav">
   <div>Brands</div>
-  <div>The Holiday Edit</div>
+  <div><a href="./Holiday.html">Holidays</a></div>
   <div id="salariya">Sale
     <div class="mydrop" id="saledrop">
       <div><h2>$</h2><p>Sale</p></div>
@@ -120,7 +120,17 @@ const navbar = () =>{
   <div>Tools</div>
   <div>New & Trending</div>
   <div>Build a Routine</div>
-  <div>Advice</div>
+  <div id="salariya">Advice
+    <div class="mydrop" id="saledrop">
+      <div><a href="Skincare.html">Skin care</a></div>
+      <div>Makeup</div>
+      <div>Hair care</div>
+      <div>Body</div>
+      <div>Tip & Advice</div>
+      <div>Beuaty Center</div>
+      <div>Free Beauty Consulataions</div>
+    </div>
+  </div>
 </div>`
 }
 
