@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Here I linked the landingPageStyle -->
+    <link rel="stylesheet" href="shopStyles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!--Here I linked the font awesome Style -->
+    <script src="https://kit.fontawesome.com/239b8919c6.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+   
+</head>
+<body>
+
+    <!--Here I created the landingPage-container-->
+
+    <div id="landingPage-container">
+
+     <!--Here I created the row-1 that means inside we use "UsD" & "Help" Div-->
+         <div id="row-1">
+          
+            <a href="####"><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></a>
+            <a href="####"><div class="Help">Help</div></a>
+
+         </div>
+
+     <!--Here I created the row-2 that means inside we use "SkinStore Content" ,"Search Bar" "Account","Cart" & "Nav Bar"Div-->
+
+         <div id="row-2">
+             <!--Here I created  that means inside we use "SkinStore Content" ,"Search Bar" "Account" &"Cart"  Div-->
+             
+             <div id="navAbove">
+                <div id="skin-col">
+                    <div><a href="landingPage.html" style="text-decoration: none; color:#333;">SkinStore</a></div>
+                    <div>part of the <span>LOOKFANTASTIC</span> group</div>
+                </div>
+                <div id=search-col>
+                    <input id="search" type="text" placeholder="Search for a product or a brand...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div id=a-col>
+                    <div class="dropdown">
+                        <button   class="dropbtn" onclick=window.location.href="######" id="ac"><i class="far fa-user"></i> <span>Account</span> </button>
+                       
+                        <div class="dropdown-content">
+                          <a href="login.html">LOGIN</a>
+                          <a href="registration.html">REGISTER </a>
+                          <a href="wishlist.html">Wish List</a>
+                          <a href="#">Your Order</a>
+                          <a href="#">Your Referrals</a>
+                        </div>
+                      </div>
+                   
+                   
+                </div>
+                <div id=c-col>
+                    <div class="dropdown">
+                       
+                        <button  class="dropbtn" onclick=window.location.href="cart.html"  id="cart"><i class="fas fa-cart-arrow-down"></i>  <div id="cartLen">0</div> <span>Cart</span> </button>
+                        <div class="dropdown-content">
+                          <a  id="cardAval" href="#">There are currently no items in your cart.</a>
+                          
+                        </div>
+                      </div>
+
+                   
+                </div>
+               
+            </div>
+
+             <!--Here I created " "Nav Bar" Div-->
+
+             <div id="nav-container">
+                <nav>
+                   <button onclick="navSlideOut()" id="nav-btn">
+                    <div id="nav-icon">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                   </button>
+                    <ul id="nav-link"  >
+                        <li> 
+                            <button id="homePage" onclick= window.location.href="landingPage.html" >  <i class="fas fa-home"></i> </button>
+                            <button id="nav-close" onclick="navSlideIn()" >   <i class="fas fa-times"></i> </button>
+                        </li>
+                        <li  onclick=window.location.href="######" >Brands</li>
+                        <li  onclick=window.location.href="######" >Sale</li>
+                        <li  onclick=window.location.href="######" >Skin Care</li>
+                        <li  onclick=window.location.href="######" >Hair</li>
+                        <li  onclick=window.location.href="######" >Makeup</li>
+                        <li  onclick=window.location.href="######" >Tools</li>
+                        <li  onclick=window.location.href="######" >Bath & Body</li>
+                        <li  onclick=window.location.href="######" >Self-Care</li>
+                        <li  onclick=window.location.href="######" >Fragrance</li>
+                        <li  onclick=window.location.href="######" >Limited Editions</li>
+                        <li  onclick=window.location.href="######" >New</li>
+                        <li  onclick=window.location.href="######" >Advice</li>
+                        <li  onclick=window.location.href="######" ><div class="us-USD"> <div id="us-Image"><img src="https://image.shutterstock.com/image-vector/historical-flag-united-states-48-260nw-1597080676.jpg" alt="us-USD Image"></div> us - USD </div></li>
+                        <li  onclick=window.location.href="######" ><div class="Help">Help</div></li>
+                    </ul>
+                </nav>
+            </div>
+         </div>
+      
+     <!--Here I created the row-3 that means inside we use Remining thing like what ever for example "insise content & foot part" Div-->
+
+         <div id="row-3">
+         
+             <div id="someOtherOffer">
+                <a class="slideOffers" href="#####"> <div> FREE US Shipping Over $49</div></a>
+                <a class="slideOffers" href="#####"> <div> Refer a Friend, Get $15 </div></a>
+                <a class="slideOffers" href="#####"> <div> New Customers Save 20% - Use Code NEWBIE</div></a>
+                <a class="slideOffers" href="#####"> <div> Free Beauty Consultations</div></a>
+             </div>
+                 <div id="offerAds">
+                     <a href="">
+                         <div>
+                            15% off with code SS15 + Neocutis Firming Duo (worth $48) @ $130 | Shop now 
+                        </div>
+                     </a>
+                 </div>
+                
+
+
+
+                 <div class="ProductTypeTittle">
+                    <h1>Cart</h1>
+                </div>
+    
+                <div id="FilterAndSortBox">
+                    <select  onchange="Tsort()" id="sortT">
+                        <option value="">Sort By</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="low">Price: Low to High</option>
+                    </select>
+                   <button id="checkOut" style="padding: 2px;" onclick=window.location.href="checkout.html" > Checkout</button>
+                  <b> <span>Total Price:-<span id="totalPrice" ></span></span>  </b>
+                </div>
+    
+    
+                <!-- Content  -->
+                <div id="container">
+    
+                </div>
+                <!-- *********** -->
+    
+
+
+
+                <div id="footerPart">
+                    
+
+                    <div class="FooterLine"></div>
+                    <div class="sochandle">
+                        <div id="SocialmediaHandles">
+                            <p>Sign up to our website and Start Shopping</p>
+                            <button id="signbtn">Sign Up</button>
+                        </div>
+                        <div id="conus">
+                            <h4>Connect with us</h4>
+                            <div class="foot-Social">
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+            <div>
+                <div class="FooterLine"></div>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Help & Information</h4>
+                            <ul>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                                <li><a href="#">Returns & Refunds</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">COVID-19 Information</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>About SkinStore</h4>
+                            <ul>
+                                <li><a href="AboutUs.html">About Us</a></li>
+                                <li><a href="#">Affiliate Program</a></li>
+                                <li><a href="#">Brand Directory</a></li>
+                                <li><a href="#">Coupon Codes</a></li>
+                                <li><a href="#">Refer A Friend</a></li>
+                                <li><a href="#">Student Discount</a></li>
+                                <li><a href="#">Join SkinStore Experts</a></li>
+        
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Legal</h4>
+                            <ul>
+                                <li><a href="#">Cookie Information</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms And Conditions</a></li>
+                                <li><a href="#">Modern Slavery Statement</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>How To Contact Us</h4>
+                            <ul>
+                                <li><a href="#">Message Us</a></li>
+                                <li><a href="#">Free Beauty Consultations</a></li>
+                            </ul>
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </footer>
+            <div class="FooterLine"></div>
+          
+        </div>
+        
+        </div>
+            </div>
+
+
+
+
+
+                    
+                </div>
+
+         </div>
+         
+    </div>
+    
+</body>
+</html>
+
+<script src="cart.js"></script>
