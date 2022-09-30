@@ -12,12 +12,13 @@ a:hover{
     color: white;
 }
 #navbar{
+    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     position: sticky;
     top: 0;
     background-color: white;
-    z-index: 1;
+    z-index: 9;
 }
 #topnav{
     background-color: rgb(242,242,242);

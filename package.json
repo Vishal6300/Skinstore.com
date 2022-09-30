@@ -1,0 +1,20 @@
+{
+  "name": "-rhetorical-division-3531",
+  "version": "1.0.0",
+  "description": "unit-3 Project(Skinstore.com)\r Hello all",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vishal6300/-rhetorical-division-3531.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vishal6300/-rhetorical-division-3531/issues"
+  },
+  "homepage": "https://github.com/Vishal6300/-rhetorical-division-3531#readme"
+}

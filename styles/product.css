@@ -1,0 +1,145 @@
+#maincontainer {
+  display: flex;
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+  }
+  #priceSort {
+    
+    margin-left: 1%;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+  .checked {
+    color: orange;
+  }
+  .not_checked {
+    color: rgb(108, 170, 224);
+    /* border: 1px solid black; */
+  }
+  #container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+  }
+  #singleproduct {
+    width: 75%;
+    text-align: left;
+    font-family: sans-serif;
+    /* height: 400px; */
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 5px;
+    padding-bottom: 20px;
+  
+  }
+  #image {
+    width: 60%;
+    height: 200px;
+    /* background-color: black; */
+  }
+  
+  #dis {
+    /* border: 1px solid red;  */
+    text-align: center;
+  }
+  #cart {
+    width: 100%;
+    margin-top: 6px;
+    padding: 6px;
+    background-color: rgb(46, 42, 42);
+    color: cornsilk;
+    border: 0px;
+    padding: 10px;
+    font-size: 20px;
+    /* position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; */
+  }
+  #cart:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+  .hearting {
+    color: rgb(129, 119, 119);
+  }
+  .hearting:hover {
+    color: red;
+  }
+  
+  #priceSort1 {
+    margin-left: 1%;
+    padding: 10px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+  }
+  #discription {
+    width: 96%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-top: 10px;
+  
+  }
+  #discription > img {
+    width: 20%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  #discription > h4 {
+    font-family: sans-serif;
+    width: 70%;
+  }
+  #select{
+    width: 25%;
+    margin-bottom: 10px;
+    height: auto;
+  }
+   
+  @media only screen and (min-width: 500px) and (max-width: 850px) {
+    #container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      width: 100%;
+    }
+    #priceSort {
+      margin-left: 1%;
+      padding: 10px;
+      font-family: sans-serif;
+    }
+  }
+  
+  @media only screen and (min-width: 0px) and (max-width: 500px) {
+    #container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+      width: 100%;
+    }
+    #priceSort {
+      display: none;
+    }
+    #priceSort1 {
+      margin-left: 1%;
+      padding: 10px;
+      display: flex;
+    }
+    #singleproduct {
+       height: 400px; 
+      box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    }
+    #discription > img {
+      width: 100%;
+    }
+    #discription > h4 {
+      display: none;
+    }
+  } 

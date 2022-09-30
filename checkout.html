@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+    <div class="container121">
+        <div class="subcontainer">
+            <div class="container">
+                <form>
+
+                    <div class="container121">
+                        <div class="add">
+                            <h3>Billing Address</h3>
+                            <label for="fname">Full Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                            <label for="email"> Email</label>
+                            <input type="text" id="email" name="email" placeholder="john@example.com">
+                            <label for="adr"> Address</label>
+                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="New York">
+
+                            <div class="container121">
+                                <div class="add">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="NY">
+                                </div>
+                                <div class="add">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="10001">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="add">
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                            <div class="container121">
+                                <div class="add">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                </div>
+                                <div class="add">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked"> Shipping address same as billing
+                    </label>
+                   <a href="payment_success.html"> <input type="button" value="Continue to checkout" class="btn"></a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
