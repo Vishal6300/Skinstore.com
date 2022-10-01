@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Here I linked the landingPageStyle -->
+    <title>View All Decorté - SkinStore</title>
+    <link rel="stylesheet" href="shopStyles.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/239b8919c6.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+    <div id="navbar"></div>
+    <div id="offer"></div>
+    <div id="search"></div>
+
+
+                 <div class="ProductTypeTittle">
+                    <h1>View All Decorté</h1>
+                </div>
+                
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+                <div id="FilterAndSortBox">
+                    <select  onchange="Tsort()" id="sortT">
+                        <option value="">Sort By</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="low">Price: Low to High</option>
+                    </select>
+                    <input type="text">
+                    <select name="" id="">
+                        <option value="">Skin Product Type</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Skincar Format</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Skincare Tools</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Skin Type</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <p>+Filters</p>
+                </div>
+    
+    
+                <!-- Content  -->
+                <div id="container"></div>
+                <!-- *********** -->
+
+<div id="footer"></div>
+    
+</body>
+</html>
+
+<script src="shop6.js"></script>
+<script type="module" src="./imported.js"></script>
