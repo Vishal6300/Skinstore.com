@@ -123,7 +123,7 @@ const navbar = () =>{
   <div id="salariya">Advice
     <div class="mydrop" id="saledrop">
       <div><a href="Skincare.html">Skin care</a></div>
-      <div>Makeup</div>
+      <div><a href="Makeup.html">Makeup</a></div>
       <div>Hair care</div>
       <div>Body</div>
       <div>Tip & Advice</div>
