@@ -1,5 +1,5 @@
 var cartThings = JSON.parse(localStorage.getItem("cartthings")) || [];
-
+let Tprice=0;
 reLoadM(cartThings);
 function reLoadM(cartThings){
      
@@ -15,7 +15,7 @@ function reLoadM(cartThings){
     
             // inside div creating image and  image_url
             var image = document.createElement("img");
-            image.setAttribute("src", data.image_url);
+            image.src=data.image_link;
             div.append(image);
     
             var btn1 = document.createElement("button")
@@ -52,6 +52,7 @@ function reLoadM(cartThings){
     
             var p2 = document.createElement("p")
             p2.textContent = `$${data.price}`;
+            Tprice=Tprice+Number(data.price);
             p2.style.marginTop = "1%"
             p2.style.fontSize = "24px"
             p2.style.fontWeight = "bold"
@@ -65,19 +66,25 @@ function reLoadM(cartThings){
     
     
             btn2.addEventListener("click", function () {
-                deletItems(index)
+                deletItems(index,data)
     
             });
         });
     }
     
     
-    function deletItems(index) {
+    function deletItems(index,data) {
+        Tprice=Tprice-Number(data.price);
+        totalPrice.innerHTML=Tprice;
         cartThings.splice(index, 1)
         localStorage.setItem("cartthings", JSON.stringify(cartThings));
         alert("Item Deleted");
         reLoadM(cartThings);
+        window.location.reload();
     }
+
+    let totalPrice= document.getElementById("totalPrice");
+    totalPrice.innerHTML=Tprice;
     
     
     
@@ -127,7 +134,7 @@ function Tsort(){
      reLoadM(cartThings);
     }else{
         cartThings.sort(function(a,b){
-            return (Number(a.price)-Number(b.price))
+            return (Number(a.price)-Number(b.price));
      })
      reLoadM(cartThings);
     }
