@@ -48,3 +48,10 @@ h1 {
   color: black;
   background-color: rgb(197, 255, 255);
 }
+#cartcontent{
+  display: flex;
+  flex-direction: column;
+}
+#cartcontent>div{
+  display: flex;
+}
