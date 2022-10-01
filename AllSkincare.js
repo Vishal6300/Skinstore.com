@@ -51,6 +51,23 @@ const appendData = (data) => {
       let dataS= JSON.parse(localStorage.getItem("cartthings")) ||[];
       dataS.push(el);
       localStorage.setItem("cartthings",JSON.stringify(dataS));
+
+      let jk = document.getElementById("cartcontent");
+      jk.innerHTML = null;
+      dataS.forEach((el) => {
+        let div = document.createElement("div");
+    
+        let img = document.createElement("img");
+        img.src = el.image_link;
+    
+        let name = document.createElement("h3");
+        name.innerText = el.name;
+    
+        let price = document.createElement("h3");
+        price.innerHTML = `"$" ${el.price}`;
+        div.append(img,name,price,btn);
+    jk.append(div);
+  });
     })
 
     div.append(img,name,price,btn);
