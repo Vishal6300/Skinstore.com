@@ -69,8 +69,8 @@ const navbar = () =>{
                 <div class="dropdown-content">
                   <div id="mainacc">
                   <div id="lrmenu">
-                    <button id="loginacc">Login</button>
-                    <button>Singup</button>
+                    <button id="loginacc"><a href="./login.html">Login</a></button>
+                    <button><a href="./registration.html">Singup</a></button>
                     </div>
                     <div id="otheracc">
                       <div>Wishlist</div>

@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+  <div id="nav">
+    <div class="conatiner_logo">
+      <a href="\">
+        <img
+          src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg"
+          alt="">
+      </a>
+    </div>
+  </div>
+  <form>
+    <div class="container">
+      <h2>About You</h2>
+      <h3>Sign Up With</h3>
+      <div id="socialconnect">
+        <div class="facebook">
+          <img class="fb"
+            src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="">
+
+          <div id="ff">Facebook</div>
+        </div>
+        <div class="google">
+          <img class="go" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="">
+
+          <span id="gg">&nbsp;Google</span>
+
+
+        </div>
+      </div>
+
+
+      <hr>
+      <h3>Or create an email account</h3>
+
+      <label for="name"><b>Full Name</b></label>
+      <input type="text" placeholder="Enter Full name" name="name" id="name" required>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="cemail"><b> Confirm Email</b></label>
+      <input type="text" placeholder="Enter confirm Email" name="email" id="cemail" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="password" required>
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="password" placeholder="confirm Password" name="psw-repeat" id="psw-repeat" required>
+
+      <label for="number"><b>Phone Name</b></label>
+      <input type="text" placeholder="Enter phone name" name="name" id="number" required>
+
+      <button type="submit" class="registerbtn">CONTINUE</button>
+      <p>By preceeding you are confirming that you agree to our <a href="">Terms and Conditions</a> and <a
+          href="">Privacy Policy</a></p>
+    </div>
+
+
+  </form>
+</body>
+
+</html>
+<script>
+
+  document.querySelector("form").addEventListener("submit", registration)
+  var userArr = JSON.parse(localStorage.getItem("userInfo")) || [];
+  //  console.log(userDetails)
+  function registration(event) {
+    event.preventDefault();
+    var fullname = document.querySelector("#name").value
+    var email = document.querySelector("#email").value
+    var confirm_email = document.querySelector("#cemail").value
+    var password = document.querySelector("#password").value
+    var confirm_password1 = document.querySelector("#psw-repeat").value
+    var phone_num1 = document.querySelector("#number").value
+    // console.log(fullname,email,confirm_email,password,cofirm_password,phone_num)
+    var userInfo = {
+      name: fullname,
+      email: email,
+      confirm_email: confirm_email,
+      password: password,
+      confirm_password: confirm_password1,
+      phone_num: phone_num1,
+    }
+    userArr.push(userInfo);
+    localStorage.setItem("userInfo", JSON.stringify(userArr))
+    alert("Registration Successfully Done")
+    window.location.href = "login.html"
+  }
+
+
+</script>

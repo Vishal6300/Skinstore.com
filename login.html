@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div id="nav">
+        <div class="conatiner_logo">
+            <a href="\">
+                <img src="https://s1.thcdn.com/enterprise/assets/skstr-global-113e023e-ecc9-45df-abad-eb92ce1956c9-logo-default.svg" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="main">
+    <div class="container">
+       
+        <div class="container_login">
+            <div class="login_box">
+               
+              
+            <h2>Existing Customers</h2>
+                  <form>
+                   
+                    <label>*Email Address</label>
+                    <div class="c1">
+                    <input id="email" type="text" placeholder="Email Address" required>
+                     
+                </div>
+                    <label>*Password</label>
+                    <div>
+                    <input id="password" type="password" placeholder="Password" required>
+                   
+                </div>
+                  <a href="forgot_pass.html">FORGOTTEN YOUR PASSWORD?</a>
+                    <input type="submit" value="SIGN IN" name="contine" id="button">
+                   <p>Or, Continue with</p>
+                   <div>
+                    <div id="socialconnect">
+                   <div class="facebook">
+                     <img class="fb" src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/facebook_circle_color-512.png" alt="">
+                     
+                          <span id="ff">&nbsp;Facebook</span>
+                     
+                      
+                   </div>
+                  <div class="google"> 
+                      <img class="go" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png" alt="">
+                      
+                           <span id="gg">&nbsp;Google</span>
+  
+                           
+                 </div>
+               </div>
+               </div>
+                  </form>
+              </div>
+            </div>
+           
+        </div>
+        <div class="container2">
+            <h2>New Customers</h2>
+           
+           
+             <a href="registration.html"> <input type="submit" value="REGISTER"  id="button1" ></a>
+        </div>
+        
+    </div>
+       
+    </div>
+</body>
+</html>
+
+<script>
+
+
+
+    document.querySelector("form").addEventListener("submit",login)
+    var loginArr=JSON.parse(localStorage.getItem("userInfo"))||[];
+  
+    
+    function login(event){
+      event.preventDefault();
+      var email=document.querySelector("#email").value
+      var password=document.querySelector("#password").value
+       
+        if(loginArr.length>0){
+            for(i=0;i<loginArr.length;i++){
+            console.log(loginArr[i].email,email,loginArr[i].password,password)
+            if(loginArr[i].email==email && loginArr[i].password==password){
+                alert("Login Successfully Done");
+                window.location.href="index.html"
+                break;
+            }else{
+                if((loginArr.length-1)==i){
+                    alert("check email and password correct or Wrong else goto REGISTER");
+                }
+            }
+        }
+        }else{
+            alert("check email and password correct or Wrong else goto REGISTER");
+        }
+
+    }
+  </script>
