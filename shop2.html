@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Here I linked the landingPageStyle -->
+    <title>Christophe Robin Gift</title>
+    <link rel="stylesheet" href="./navbar.css">
+
+    <link rel="stylesheet" href="shopStyles.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/239b8919c6.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+    <div id="navbar"></div>
+    <div id="offer"></div>
+    <div id="search"></div>
+
+
+
+
+
+                 <div class="ProductTypeTittle">
+                    <h1>Christophe Robin Products</h1>
+                </div>
+                <div class="ProductTypeTittle">
+                    <p>Keep your skin clean and refreshed with our extensive range of skin cleansers. We have a thorough
+                        choice of cleansers, micellar waters and make-up removers designed to cater for each individual skin
+                        type and concern, from a wide range of brands. Whether you suffer from sensitive, oily or acne prone
+                        skin, you can achieve the results you require from our tailored choices. For a professional cleanse,
+                        try our range of premium brands such as Caudalie,<span id="dots">...</span><span id="more"> Avene
+                            and Decleor. For a more medicated, specialized cleanse, why not check out SkinCeuticals, Murad
+                            or Paula's Choice?
+                            Remove dirt, grime and impurities effectively by ensuring one of our cleansers is incorporated
+                            into your daily skin care regime.</span></p>
+                </div>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+                <div id="FilterAndSortBox">
+                    <select  onchange="Tsort()" id="sortT">
+                        <option value="">Sort By</option>
+                        <option value="high">Price: High to Low</option>
+                        <option value="low">Price: Low to High</option>
+                    </select>
+                    <input type="text">
+                    <select name="" id="">
+                        <option value="">Skin Product Type</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Skincar Format</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Skincare Tools</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="">Skin Type</option>
+                        <option value="">Price: High to Low</option>
+                        <option value="">Price: Low to High</option>
+                    </select>
+                    <p>+Filters</p>
+                </div>
+    
+    
+                <!-- product  -->
+                <div id="container"></div>
+
+
+
+
+
+                <div id="footer"></div>
+</body>
+</html>
+
+<script src="Shop2.js"></script>
+<script type="module" src="./imported.js"></script>
