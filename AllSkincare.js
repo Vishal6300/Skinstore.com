@@ -20,6 +20,8 @@ const getData = async () => {
     let data = await res.json();
         console.log(data);
     appendData(data);
+    appendData(data);
+    appendData(data);
   } catch (err) {
     console.log(err);
   }
@@ -45,6 +47,11 @@ const appendData = (data) => {
 
     let btn= document.createElement("button");
     btn.innerText="Quick Buy";
+    btn.addEventListener("click",()=>{
+      let dataS= JSON.parse(localStorage.getItem("cartthings")) ||[];
+      dataS.push(el);
+      localStorage.setItem("cartthings",JSON.stringify(dataS));
+    })
 
     div.append(img,name,price,btn);
     products.append(div);
