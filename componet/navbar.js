@@ -111,7 +111,7 @@ const navbar = () => {
       <div><img src="https://s1.thcdn.com/navigation/121/2019/08/Label-20190803-20190803.png" alt=""><p>Fetured Offers</p></div>
     </div>
   </div>
-  <div>Skin Care</div>
+  <div><a href="./AllSkincare.html">Skin Care</a></div>
   <div>Hair</div>
   <div>Makeup</div>
   <div>Bath & Body</div>
