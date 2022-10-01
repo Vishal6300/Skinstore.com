@@ -4,18 +4,34 @@
 }
 #containers {
   display: flex;
-  gap: 3%;
+  
 }
-#refine {
+/* #refine {
   width: 30%;
-}
+} */
 #Products {
-  width: 65%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 #Products>h1{
     width: 100%;
     margin-bottom: 20px;
     
+}
+#Products>div{
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 20px;
+  height: 100%;
+  /* border: solid 1px red; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#Products>div>img{
+  width: 100%;
+  height: 250px;
 }

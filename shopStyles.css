@@ -203,3 +203,16 @@ font-size: 21px;
 #ProductsCards {
   margin: 2px 20px 2px 20px;
 }
+
+#container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin: auto;
+  margin-top: 15px;
+}
+
+#container>div{
+  display: block;
+  margin: auto;
+  padding: 5px;
+}
