@@ -1,5 +1,5 @@
-const navbar = () =>{
-    return `<div id="topnav">
+const navbar = () => {
+  return `<div id="topnav">
     <div id="topbtn">
         <div id="usic">
             <img src="https://cdn-icons-png.flaticon.com/128/323/323310.png" alt="">
@@ -124,8 +124,8 @@ const navbar = () =>{
     <div class="mydrop" id="saledrop">
       <div><a href="Skincare.html">Skin care</a></div>
       <div><a href="Makeup.html">Makeup</a></div>
-      <div>Hair care</div>
-      <div>Body</div>
+      <div><a href="Haircare.html">Haircare</a></div>
+      <div><a href="Body.html">Body</a></div>
       <div>Tip & Advice</div>
       <div>Beuaty Center</div>
       <div>Free Beauty Consulataions</div>
