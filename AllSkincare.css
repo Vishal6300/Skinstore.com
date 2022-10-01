@@ -1,10 +1,11 @@
 .navi {
   width: 100%;
   margin-left: 40px;
+  margin-top: 16px;
 }
 #containers {
   display: flex;
-  
+  margin-top: 30px;
 }
 /* #refine {
   width: 30%;
@@ -15,23 +16,35 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
-#Products>h1{
-    width: 100%;
-    margin-bottom: 20px;
-    
+h1 {
+  width: 100%;
+  margin-bottom: 10px;
 }
-#Products>div{
-  width: 300px;
+#Products > div {
+  /* width: 20%; */
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-bottom: 20px;
   height: 100%;
-  /* border: solid 1px red; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#Products>div>img{
+#Products > div > img {
   width: 100%;
   height: 250px;
+}
+#Products>div>button{
+  color: white;
+  background-color: rgb(32, 32, 32);
+  padding: 10px 15px;
+  border: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#Products>div>button:hover{
+  color: black;
+  background-color: rgb(197, 255, 255);
 }
