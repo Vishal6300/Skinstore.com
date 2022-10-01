@@ -8,9 +8,7 @@ a{
     text-decoration: none;
     color: black;
 }
-a:hover{
-    color: white;
-}
+
 #navbar{
     /* overflow: hidden; */
     display: flex;
@@ -154,11 +152,14 @@ a:hover{
     padding: 10px 50px;
     font-weight: bold;
 }
-
+#loginacc+button>a{
+    color: black;
+}
 #loginacc:hover{
     background-color:aqua;
     color: black;
 }
+
 #loginacc+button{
     background-color: white;
     padding: 10px 50px;
