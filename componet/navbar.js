@@ -85,9 +85,9 @@ const navbar = () => {
         <div id="cartmenus"></div>
         <div class="dropdown">
             <button id="svgcart" class="dropbtn">
-                <svg  class="responsiveFlyoutBasket_icon responsiveFlyoutBasket_icon-basket" width="24" height="24" >
+                <svg class="responsiveFlyoutBasket_icon responsiveFlyoutBasket_icon-basket" width="24" height="24" >
                     <path d="M6.57412994,10 L17.3932043,10 L13.37,4.18336196 L15.0021928,3 L19.8438952,10 L21,10 C21.5522847,10 22,10.4477153 22,11 C22,11.5522847 21.5522847,12 21,12 L17.5278769,19.8122769 C17.2068742,20.534533 16.4906313,21 15.7002538,21 L8.29974618,21 C7.50936875,21 6.79312576,20.534533 6.47212308,19.8122769 L3,12 C2.44771525,12 2,11.5522847 2,11 C2,10.4477153 2.44771525,10 3,10 L4.11632272,10 L9,3 L10.6274669,4.19016504 L6.57412994,10 Z M5.18999958,12 L8.29999924,19 L15.6962585,19 L18.8099995,12 L5.18999958,12 Z"></path>
-                  </svg> <span><a href="./cart.html">cart</a></span>
+                  </svg> <span id="cartt"><a href="./cart.html"><p id="cartt">cart</p></a></span>
             </button>
             <div class="dropdown-content">
                <div id="cartcontent">There are currently no items in your cart.</div>
