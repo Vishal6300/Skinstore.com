@@ -126,6 +126,11 @@ a{
   display: block;
   
 }
+#regtoop>a:hover{
+    /* color: white; */
+    background-color:rgb(234, 255, 255);
+
+}
 .dropdown:hover #cartcontent {
     padding-right: 100px;
      padding-top: 50;
@@ -152,10 +157,19 @@ a{
     padding: 10px 50px;
     font-weight: bold;
 }
+#loginacc>a{
+    text-align: center;
+
+}
 #loginacc+button>a{
     color: black;
+    text-align: center;
 }
 #loginacc:hover{
+    background-color:aqua;
+    color: black;
+}
+#loginacc>a:hover{
     background-color:aqua;
     color: black;
 }
