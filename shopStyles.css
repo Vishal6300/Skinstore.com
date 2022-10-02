@@ -24,16 +24,16 @@
   margin-bottom: 2%;
 }
 
-/* div>img {
+#container>div>img {
   height: 250px;
 }
 
-div>img:hover {
+#container>div>img:hover {
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-} */
+}
 
 @media only screen and (min-width: 0px) and (max-width: 320px) {
   #container {
