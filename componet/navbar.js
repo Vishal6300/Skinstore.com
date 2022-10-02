@@ -2,7 +2,7 @@ const navbar = () => {
   return `<div id="topnav">
     <div id="topbtn">
         <div id="usic">
-            <img src="https://cdn-icons-png.flaticon.com/128/323/323310.png" alt="">
+            <img style="width:10px;height:10px;" src="https://cdn-icons-png.flaticon.com/128/323/323310.png" alt="">
             <p>us-USD</p>
         </div>
         <div id="idhelpnav">Help</div>
@@ -70,7 +70,7 @@ const navbar = () => {
                   <div id="mainacc">
                   <div id="lrmenu">
                     <button id="loginacc"><a href="./login.html">Login</a></button>
-                    <button><a href="./registration.html">Singup</a></button>
+                    <button id="regtoop"><a href="./registration.html">Singup</a></button>
                     </div>
                     <div id="otheracc">
                       <div>Wishlist</div>

@@ -190,6 +190,11 @@ a {
     color: black;
 }
 
+#loginacc>a:hover {
+    background-color: aqua;
+    color: black;
+}
+
 #loginacc:hover {
     background-color: aqua;
     color: black;
